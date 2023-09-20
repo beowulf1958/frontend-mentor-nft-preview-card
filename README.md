@@ -60,5 +60,5 @@ Need to research responsive designs, especially as it pretains to card layouts
 
 ## Author
 
-- Website - [Jordan Murrin](https://www.your-site.com)
+- Website - [Jordan Murrin](https://symphonious-travesseiro-e4e7a5.netlify.app/)
 - Frontend Mentor - [@Beowulf1958](https://www.frontendmentor.io/profile/Beowulf1958)
