@@ -1,0 +1,130 @@
+:root {
+    --clr-soft-blue: hsl(215, 51%, 70%);
+    --clr-cyan: hsl(178, 100%, 50%);
+
+    --clr-main-bg: hsl(217, 54%, 11%);
+    --clr-card-bg: hsl(216, 50%, 16%);
+    --clr-line: hsl(215, 32%, 27%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --fw-light: 300;
+    --fw-medium: 400;
+    --fw-bold: 600;
+  }
+  /* Andy Bell Reset   */
+  /* Box sizing rules */
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  p,
+  figure {
+    margin: 0;
+  }
+  body {
+    background-color: var(--clr-main-bg);
+    color: var(--clr-soft-blue);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: var(--fw-medium);
+    font-family: "Outfit", sans-serif;
+  }
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* custom styles */
+  .container {
+    overflow: hidden;
+    width: 60%;
+    background-color: var(--clr-card-bg);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 1rem;
+  }
+  .highlight {
+    color: var(--clr-white);
+  }
+  .accent {
+    color: var(--clr-cyan);
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  .parent {
+    margin-left: 15%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    /* grid-template-columns: repeat(3, 1fr); */
+  }
+  .img-wrapper {
+    width: 100%;
+    border-radius: 0.5rem;
+
+    grid-area: 1/1/2/2;
+    /* grid-area: 1 / 2 / 2 / 3; */
+  }
+  img {
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .layer {
+    width: 88%;
+    background-color: hsla(68, 33%, 68%, 0.5);
+    opacity: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+  }
+  .layer:hover {
+    opacity: 1;
+  }
+  .view {
+    grid-area: 2 /2 /3/ 3;
+  }
+  .title,
+  .copy,
+  .flex-group {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .flex-group {
+    display: flex;
+    gap: 0.75rem;
+  }
+  .flex-item {
+    height: 2.5rem;
+    padding: 0.5rem;
+    display: inline-flex;
+    gap: 1rem;
+  }
+  hr {
+    border: 1px solid var(--clr-line);
+  }
+
+  .avatar {
+    height: 1.5rem;
+  }
+  .author {
+    margin-bottom: 1rem;
+  }
