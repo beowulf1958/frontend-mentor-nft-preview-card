@@ -47,7 +47,7 @@
   /* custom styles */
   .container {
     overflow: hidden;
-    width: 340px;
+    width: 360px;
     background-color: var(--clr-card-bg);
     margin: 0 auto;
     display: grid;
