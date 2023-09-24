@@ -29,6 +29,7 @@
     margin: 0;
   }
   body {
+    min-height: 100vh;
     background-color: var(--clr-main-bg);
     color: var(--clr-soft-blue);
     font-size: 1.125rem;
@@ -46,7 +47,7 @@
   /* custom styles */
   .container {
     overflow: hidden;
-    width: 60%;
+    width: 340px;
     background-color: var(--clr-card-bg);
     margin: 0 auto;
     display: grid;
@@ -70,16 +71,15 @@
   }
   .parent {
     margin-left: 15%;
-
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     /* grid-template-columns: repeat(3, 1fr); */
   }
   .img-wrapper {
-    width: 100%;
+    width: 300px;
+    height: 300px;
     border-radius: 0.5rem;
-
     grid-area: 1/1/2/2;
     /* grid-area: 1 / 2 / 2 / 3; */
   }
